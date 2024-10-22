@@ -20,21 +20,22 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
+							<div id="3D_dog">
 							<!-- <span class="icon fa-gem"></span> -->
-							<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"></script>
-							<spline-viewer url="https://prod.spline.design/AINKQg6-pzrJdQpN/scene.splinecode"></spline-viewer>
+								<script type="module" src="assets/js/animated_dog.js"></script>
+							</div>
 						</div>
 						<div class="content">
 							<div class="inner">
 								<h1>Owen Raymond</h1>
-								<p>Hi, this is my website.</p>
+								<p><p>Hi, i'm a computer science and economics double major at colby college. I am driven by my passion for data and research!</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#intro">about me</a></li>
+								<li><a href="#work">Experience</a></li>
+								<li><a href="#about">Research</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -46,25 +47,37 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
+								<h2 class="major">About me</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>Coming soon...</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
+								<h2 class="major">Experience</h2>
+								<h3>Research Assistant</h3>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>Coming soon...</p>
 							</article>
 
-						<!-- About -->
+						<!-- Research -->
 							<article id="about">
-								<h2 class="major">About</h2>
+								<h2 class="major">Research</h2>
+								<h3>Lab: Software Engineering & Human Factors Lab<br/>
+									  Advising Professor: Dr. Naser Al Madi</h3>
+								</h3>
+								<h4>Multilingual Eye-Tracking Research</h4>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>&emsp; Recently, there has been a growing interest in collecting eye-tracking data from languages other than English to create more diversity in available datasets. Due to the high upfront costs of conducting eye movement experiments, recent developments have been mostly concentrated on Indo-European languages. As members of a culturally diverse college campus, we had a unique opportunity to collect reading data for native and second-language readers of English, Spanish, Mandarin, Hindi, Russian, Arabic, Japanese, Urdu, and Vietnamese.
+							  <br/>&emsp; As the project leader, I was heavily involved in all aspects of project development. In the initial idea generation stage, my lab professor and I determined the project goals and outlined what we wanted the participant experiment to look like. We ran into issues with the Eyelink experiment builder, which we used for previous experiments but could not handle the more complex logic to facilitate our displays. To remedy this, I created an easily scalable program for future language implementation, which takes in our language stimuli, breaks them down into display chunks, randomizes their order, and displays them in sequence for the participant. Using the program, my student research partner and I collected eye-tracking data from participant readings of 388 passages of different lengths across our language distribution.
+								</p>
+								<h4>GP-TSM Eye-Tracking Research</h4>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>&emsp; Mechanisms to increase the efficiency of text reading and retention are diverse, given the range of applications and improvements that such functionality, if effective, can bring. GP-TSM, or Grammar-Preserving Text Aliency Modulation, is a novel approach that uses levels of greyscale to quickly display importance to the reader. Darker text is determined by the technique to be more important than lighter text and indicates to readers that they should actively read the lighter text only if they need additional context. We show through comparison with plain text in an eye tracking study, that participants more efficiently process information in the passage, with no loss of comprehension.
+								<br/>&emsp; The approach was pioneered by researchers at the Harvard University SEAS lab, who recruited our lab to create an experiment using the GP-TSM mechanism. I created the display system as an extension of the Multilingual Eye Tracking program that allowed for the shading of text and enhanced randomization protocols to ensure that each participant saw an even amount of both text types and ensure we collected the same number of data entries for each combination of passage and mechanism. I then organized and ran experiments to gather data from participants on campus in order to test the efficacy of the GP-TSM mechanism. In a combined effort with my lab professor and Harvard SEAS collaborators we analyzed the reading patterns and answer accuracy.
+								</p>
+								<h4>Evaluating Trustworthiness in AI Generated Answers <br/> [In Progress]</h4>
+								<p>&emsp; Increasingly often people are using generated AI to answer questions they previously used search engines for. However, unlike search results which return a variety of sources, the response returned by a generated AI tool is a single answer. Similar to adding keywords to a Google search, there are many ways to influence the results returned by a model like ChatGPT. In my honors thesis, I am looking at key characteristics and prompts that can be used to alter the results of a ChatGPT response and seeing how these changes affect user trust. These variables include writing style, use of references, inclusion of a graphical figure, and direction to give multiple perspectives. I aim to assess how these criteria may lead to misplaced trust or give users the ability to obtain a better explanation.
 							</article>
 
 						<!-- Contact -->
@@ -91,10 +104,9 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="mailto:owen.raymond@colby.edu" target="_blank" class="icon solid fa-envelope-square"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/owen-raymond/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/obray855" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -344,7 +356,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Owen Raymond. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
